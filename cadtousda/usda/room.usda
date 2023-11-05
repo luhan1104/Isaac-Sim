@@ -1,0 +1,339 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    float xformOp:rotateX = 0
+    float xformOp:rotateY = 0
+    float xformOp:rotateZ = 0
+    uniform token[] xformOpOrder = ["xformOp:rotateX", "xformOp:rotateY", "xformOp:rotateZ"]
+
+    over "EMMA400" (
+        prepend references = @/home/liufeng/isaac_test/cadtousda/usda/EMMA400.usda@
+    )
+    {
+        double3 xformOp:translate = (3, 5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Cube "Cube0" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (0.02, 1.980198, 1)
+        double3 xformOp:translate = (2, 2.5, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube1" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (2.970297, 0.02, 1)
+        double3 xformOp:translate = (9.5, 8.5, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube2" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (0.02, 9.9009905, 1)
+        double3 xformOp:translate = (15, 5, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube3" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (14.851485, 0.02, 1)
+        double3 xformOp:translate = (7.5, 10, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube4" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (0.02, 3.960396, 1)
+        double3 xformOp:translate = (5, 8, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube5" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (0.02, 9.9009905, 1)
+        double3 xformOp:translate = (0, 5, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube6" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (0.02, 1.980198, 1)
+        double3 xformOp:translate = (8, 7.5, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube7" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (2.970297, 0.02, 1)
+        double3 xformOp:translate = (9.5, 6.5, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube8" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (1.980198, 0.02, 1)
+        double3 xformOp:translate = (3, 3.5, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube9" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (0.02, 3.4653466, 1)
+        double3 xformOp:translate = (10, 1.75, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube10" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (0.02, 1.980198, 1)
+        double3 xformOp:translate = (4, 2.5, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube11" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (14.851485, 0.02, 1)
+        double3 xformOp:translate = (7.5, 0, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube12" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (1.980198, 0.02, 1)
+        double3 xformOp:translate = (3, 1.5, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Cube "Cube13" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        bool physics:rigidBodyEnabled = 1
+        double size = 1
+        float3 xformOp:scale = (0.02, 1.980198, 1)
+        double3 xformOp:translate = (11, 7.5, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+
+    def Mesh "tag5X5_0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        kind = "component"
+    )
+    {
+        float3[] extent = [(-0.074, -0.074, 0), (0.074, 0.074, 0)]
+        int[] faceVertexCounts = [4]
+        int[] faceVertexIndices = [0, 1, 2, 3]
+        rel material:binding = </TexModel/boardMat_5X5>
+        point3f[] points = [(-0.074, -0.074, 0), (0.074, -0.074, 0), (0.074, 0.074, 0), (-0.074, 0.074, 0)]
+        texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1)] (
+            interpolation = "varying"
+        )
+        float3 xformOp:rotateXYZ = (0, 0, 30)
+        double3 xformOp:translate = (3, 5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+    }
+
+    def Mesh "tag5X5_1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        kind = "component"
+    )
+    {
+        float3[] extent = [(-0.074, -0.074, 0), (0.074, 0.074, 0)]
+        int[] faceVertexCounts = [4]
+        int[] faceVertexIndices = [0, 1, 2, 3]
+        rel material:binding = </TexModel/boardMat_5X5>
+        point3f[] points = [(-0.074, -0.074, 0), (0.074, -0.074, 0), (0.074, 0.074, 0), (-0.074, 0.074, 0)]
+        texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1)] (
+            interpolation = "varying"
+        )
+        float3 xformOp:rotateXYZ = (0, 0, 0)
+        double3 xformOp:translate = (9.5, 5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+    }
+
+    def Mesh "tag2XN_0" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        kind = "component"
+    )
+    {
+        float3[] extent = [(-0.0285, -0.24, 0), (0.285, 0.24, 0)]
+        int[] faceVertexCounts = [4]
+        int[] faceVertexIndices = [0, 1, 2, 3]
+        rel material:binding = </TexModel/boardMat_2XN>
+        point3f[] points = [(-0.24, -0.0285, 0), (-0.24, 0.0285, 0), (0.24, 0.0285, 0), (0.24, -0.0285, 0)]
+        texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1)] (
+            interpolation = "varying"
+        )
+        float3 xformOp:rotateXYZ = (0, 0, 0)
+        double3 xformOp:translate = (6, 5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+    }
+
+    def Mesh "tag2XN_1" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        kind = "component"
+    )
+    {
+        float3[] extent = [(-0.0285, -0.24, 0), (0.285, 0.24, 0)]
+        int[] faceVertexCounts = [4]
+        int[] faceVertexIndices = [0, 1, 2, 3]
+        rel material:binding = </TexModel/boardMat_2XN>
+        point3f[] points = [(-0.24, -0.0285, 0), (-0.24, 0.0285, 0), (0.24, 0.0285, 0), (0.24, -0.0285, 0)]
+        texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1)] (
+            interpolation = "varying"
+        )
+        float3 xformOp:rotateXYZ = (0, 0, 90)
+        double3 xformOp:translate = (13, 5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+    }
+
+    def Cylinder "REF_0" (
+        prepend apiSchemas = ["MaterialBindingAPI", "PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+        kind = "component"
+    )
+    {
+        double height = 0.5
+        rel material:binding = </TexModel/boardMat_REF>
+        bool physics:rigidBodyEnabled = 1
+        double radius = 0.0375
+        float3 xformOp:rotateXYZ = (0, 0, 0)
+        double3 xformOp:translate = (9.5, 7.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+    }
+}
+
+def "TexModel"
+{
+    def Material "boardMat_5X5"
+    {
+        token outputs:surface.connect = </TexModel/boardMat_5X5/PBRShader_5X5.outputs:surface>
+
+        def Shader "PBRShader_5X5"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor.connect = </TexModel/boardMat_5X5/diffuseTexture_5X5.outputs:rgb>
+            float inputs:metallic = 0
+            float inputs:roughness = 0.4
+            token outputs:surface
+        }
+
+        def Shader "stReader_5X5"
+        {
+            uniform token info:id = "UsdPrimvarReader_float2"
+            float2 outputs:result
+        }
+
+        def Shader "diffuseTexture_5X5"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @/home/liufeng/isaac_test/lh/6.png@
+            float2 inputs:st.connect = </TexModel/boardMat_5X5/stReader_5X5.outputs:result>
+            float3 outputs:rgb
+        }
+    }
+
+    def Material "boardMat_2XN"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:surface.connect = </TexModel/boardMat_2XN/PBRShader_2XN.outputs:surface>
+
+        def Shader "PBRShader_2XN"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor.connect = </TexModel/boardMat_2XN/diffuseTexture_2XN.outputs:rgb>
+            float inputs:metallic = 0
+            float inputs:roughness = 0.4
+            token outputs:surface
+        }
+
+        def Shader "stReader_2XN"
+        {
+            uniform token info:id = "UsdPrimvarReader_float2"
+            token inputs:varname.connect = </TexModel/boardMat_2XN.inputs:frame:stPrimvarName>
+            float2 outputs:result
+        }
+
+        def Shader "diffuseTexture_2XN"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @/home/liufeng/isaac_test/lh/5.png@
+            float2 inputs:st.connect = </TexModel/boardMat_2XN/stReader_2XN.outputs:result>
+            float3 outputs:rgb
+        }
+    }
+
+    def Material "boardMat_REF"
+    {
+        token outputs:surface.connect = </TexModel/boardMat/PBRShader_REF.outputs:surface>
+    }
+
+    def "boardMat"
+    {
+        def Shader "PBRShader_REF"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:metallic = 0
+            float inputs:Reflection = 50
+            float inputs:roughness = 0.4
+            token outputs:surface
+        }
+    }
+}
+

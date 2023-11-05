@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="EMMA1000_body">
+  <link
+    name="base_footprint">
+    <inertial>
+      <origin
+        xyz="-0.0179805709767897 -0.0047983858865317 0.0528368113827534"
+        rpy="0 0 0" />
+      <mass
+        value="20.2569373261398" />
+      <inertia
+        ixx="4.07133914893143"
+        ixy="-0.040815864697404"
+        ixz="0.00128962509824787"
+        iyy="6.01593235941976"
+        iyz="0.00182045562865074"
+        izz="9.89302424108045" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EMMA1000_body/meshes/base_footprint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.741176470588235 0.901960784313726 0.956862745098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EMMA1000_body/meshes/base_footprint.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

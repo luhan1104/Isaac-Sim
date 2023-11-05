@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="FOLA-BN2001-RBS-body">
+  <link
+    name="base_footprint">
+    <inertial>
+      <origin
+        xyz="0.0769239695092697 -0.00552955134980715 0.641019114863501"
+        rpy="0 0 0" />
+      <mass
+        value="32.6959877212265" />
+      <inertia
+        ixx="2.2494754366502"
+        ixy="0.00146500321876582"
+        ixz="0.0486147623026947"
+        iyy="1.12237038996173"
+        iyz="-0.00463754491774544"
+        izz="1.24230541208107" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://FOLA-BN2001-RBS-body/meshes/base_footprint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://FOLA-BN2001-RBS-body/meshes/base_footprint.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

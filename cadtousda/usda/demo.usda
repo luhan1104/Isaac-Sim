@@ -1,0 +1,22 @@
+#usda 1.0
+
+def Xform "demo0"
+{
+    double3 xformOp:translate = (1, 1, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate"]
+
+    def Cube "tag0"
+    {
+    }
+}
+
+def Xform "demo1"
+{
+    double3 xformOp:translate = (1, 2, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate"]
+
+    def Cube "tag1"
+    {
+    }
+}
+

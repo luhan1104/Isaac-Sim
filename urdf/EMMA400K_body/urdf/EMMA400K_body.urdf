@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="EMMA400K_body">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00173534130225689 -0.000770277844529897 0.0747027331792891"
+        rpy="0 0 0" />
+      <mass
+        value="14.9508903963372" />
+      <inertia
+        ixx="0.285683051149646"
+        ixy="-0.00378048095222313"
+        ixz="0.00226821253980653"
+        iyy="0.326653185279713"
+        iyz="-0.000460457739284666"
+        izz="0.588262131686954" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EMMA400K_body/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EMMA400K_body/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
